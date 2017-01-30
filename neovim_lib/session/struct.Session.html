@@ -47,26 +47,25 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-314' class='srclink' href='../../src/neovim_lib/src/session.rs.html#15-18' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct Session {
-    // some fields omitted
-}</pre><div class='docblock'><p>An active Neovim session.</p>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl <a class='struct' href='../../neovim_lib/session/struct.Session.html' title='neovim_lib::session::Session'>Session</a></code></h3><div class='impl-items'><h4 id='method.new_tcp' class='method'><code>fn <a href='#method.new_tcp' class='fnname'>new_tcp</a>(addr: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/std/io/error/type.Result.html' title='std::io::error::Result'>Result</a>&lt;<a class='struct' href='../../neovim_lib/session/struct.Session.html' title='neovim_lib::session::Session'>Session</a>&gt;</code></h4>
+               </span><a id='src-208' class='srclink' href='../../src/neovim_lib/src/session.rs.html#15-18' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Session { /* fields omitted */ }</pre><div class='docblock'><p>An active Neovim session.</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class='struct' href='../../neovim_lib/session/struct.Session.html' title='neovim_lib::session::Session'>Session</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-211' class='srclink' href='../../src/neovim_lib/src/session.rs.html#31-113' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new_tcp' class='method'><span id='new_tcp.v' class='invisible'><code>fn <a href='#method.new_tcp' class='fnname'>new_tcp</a>(addr: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/std/io/error/type.Result.html' title='std::io::error::Result'>Result</a>&lt;<a class='struct' href='../../neovim_lib/session/struct.Session.html' title='neovim_lib::session::Session'>Session</a>&gt;</code></span></h4>
 <div class='docblock'><p>Connect to nvim instance via tcp</p>
-</div><h4 id='method.new_child' class='method'><code>fn <a href='#method.new_child' class='fnname'>new_child</a>() -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/std/io/error/type.Result.html' title='std::io::error::Result'>Result</a>&lt;<a class='struct' href='../../neovim_lib/session/struct.Session.html' title='neovim_lib::session::Session'>Session</a>&gt;</code></h4>
+</div><h4 id='method.new_child' class='method'><span id='new_child.v' class='invisible'><code>fn <a href='#method.new_child' class='fnname'>new_child</a>() -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/std/io/error/type.Result.html' title='std::io::error::Result'>Result</a>&lt;<a class='struct' href='../../neovim_lib/session/struct.Session.html' title='neovim_lib::session::Session'>Session</a>&gt;</code></span></h4>
 <div class='docblock'><p>Connect to a Neovim instance by spawning a new one.</p>
-</div><h4 id='method.new_child_path' class='method'><code>fn <a href='#method.new_child_path' class='fnname'>new_child_path</a>(program: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/std/io/error/type.Result.html' title='std::io::error::Result'>Result</a>&lt;<a class='struct' href='../../neovim_lib/session/struct.Session.html' title='neovim_lib::session::Session'>Session</a>&gt;</code></h4>
+</div><h4 id='method.new_child_path' class='method'><span id='new_child_path.v' class='invisible'><code>fn <a href='#method.new_child_path' class='fnname'>new_child_path</a>(program: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/std/io/error/type.Result.html' title='std::io::error::Result'>Result</a>&lt;<a class='struct' href='../../neovim_lib/session/struct.Session.html' title='neovim_lib::session::Session'>Session</a>&gt;</code></span></h4>
 <div class='docblock'><p>Connect to a Neovim instance by spawning a new one</p>
-</div><h4 id='method.set_timeout' class='method'><code>fn <a href='#method.set_timeout' class='fnname'>set_timeout</a>(&amp;mut self, timeout: <a class='struct' href='https://doc.rust-lang.org/nightly/std/time/duration/struct.Duration.html' title='std::time::duration::Duration'>Duration</a>)</code></h4>
+</div><h4 id='method.set_timeout' class='method'><span id='set_timeout.v' class='invisible'><code>fn <a href='#method.set_timeout' class='fnname'>set_timeout</a>(&amp;mut self, timeout: <a class='struct' href='https://doc.rust-lang.org/nightly/std/time/duration/struct.Duration.html' title='std::time::duration::Duration'>Duration</a>)</code></span></h4>
 <div class='docblock'><p>Set call timeout</p>
-</div><h4 id='method.set_infinity_timeout' class='method'><code>fn <a href='#method.set_infinity_timeout' class='fnname'>set_infinity_timeout</a>(&amp;mut self)</code></h4>
-<h4 id='method.start_event_loop_cb' class='method'><code>fn <a href='#method.start_event_loop_cb' class='fnname'>start_event_loop_cb</a>&lt;F: <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.FnMut.html' title='core::ops::FnMut'>FnMut</a>(&amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;Value&gt;) + <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Send.html' title='core::marker::Send'>Send</a> + 'static&gt;(&amp;mut self, cb: F)</code></h4>
+</div><h4 id='method.set_infinity_timeout' class='method'><span id='set_infinity_timeout.v' class='invisible'><code>fn <a href='#method.set_infinity_timeout' class='fnname'>set_infinity_timeout</a>(&amp;mut self)</code></span></h4>
+<h4 id='method.start_event_loop_cb' class='method'><span id='start_event_loop_cb.v' class='invisible'><code>fn <a href='#method.start_event_loop_cb' class='fnname'>start_event_loop_cb</a>&lt;F:&nbsp;<a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.FnMut.html' title='core::ops::FnMut'>FnMut</a>(&amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;Value&gt;) + <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Send.html' title='core::marker::Send'>Send</a> + 'static&gt;(&amp;mut self,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cb: F)</code></span></h4>
 <div class='docblock'><p>Start processing rpc response and notifications</p>
-</div><h4 id='method.start_event_loop' class='method'><code>fn <a href='#method.start_event_loop' class='fnname'>start_event_loop</a>(&amp;mut self)</code></h4>
+</div><h4 id='method.start_event_loop' class='method'><span id='start_event_loop.v' class='invisible'><code>fn <a href='#method.start_event_loop' class='fnname'>start_event_loop</a>(&amp;mut self)</code></span></h4>
 <div class='docblock'><p>Start processing rpc response and notifications</p>
-</div><h4 id='method.call' class='method'><code>fn <a href='#method.call' class='fnname'>call</a>(&amp;mut self, method: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, args: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;Value&gt;) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;Value, Value&gt;</code></h4>
+</div><h4 id='method.call' class='method'><span id='call.v' class='invisible'><code>fn <a href='#method.call' class='fnname'>call</a>(&amp;mut self, method: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, args: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;Value&gt;) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;Value, Value&gt;</code></span></h4>
 <div class='docblock'><p>Sync call. Call can be made only after event loop begin processing</p>
-</div><h4 id='method.take_dispatch_guard' class='method'><code>fn <a href='#method.take_dispatch_guard' class='fnname'>take_dispatch_guard</a>(&amp;mut self) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/std/thread/struct.JoinHandle.html' title='std::thread::JoinHandle'>JoinHandle</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>&gt;</code></h4>
+</div><h4 id='method.take_dispatch_guard' class='method'><span id='take_dispatch_guard.v' class='invisible'><code>fn <a href='#method.take_dispatch_guard' class='fnname'>take_dispatch_guard</a>(&amp;mut self) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/std/thread/struct.JoinHandle.html' title='std::thread::JoinHandle'>JoinHandle</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>&gt;</code></span></h4>
 <div class='docblock'><p>Wait dispatch thread to finish.</p>
 
 <p>This can happens in case child process connection is lost for some reason.</p>
@@ -93,6 +92,8 @@
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -124,11 +125,9 @@
     <script>
         window.rootPath = "../../";
         window.currentCrate = "neovim_lib";
-        window.playgroundUrl = "";
     </script>
     <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
-    
     <script defer src="../../search-index.js"></script>
 </body>
 </html>
